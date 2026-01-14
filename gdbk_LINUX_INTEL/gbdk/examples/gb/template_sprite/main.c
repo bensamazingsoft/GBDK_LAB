@@ -1,12 +1,14 @@
+#define GBDK_DEBUG 1
 #include <gb/gb.h>
 #include <stdint.h>
 #include "New_tileset.h"
+
 
 void main(void)
 {
     DISPLAY_ON;
     SHOW_SPRITES;
-
+    
     set_sprite_data(0, 1, new_tileset);
 
     set_sprite_tile(0, 0);

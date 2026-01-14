@@ -11,6 +11,7 @@ endif
 LCC = $(GBDK_HOME)/bin/lcc 
 
 # GBDK_DEBUG = ON
+GBDK_DEBUG ?= 1
 ifdef GBDK_DEBUG
 	LCCFLAGS += -debug -v
 endif
